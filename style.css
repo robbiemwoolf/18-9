@@ -124,12 +124,17 @@ form input {
   width: 180px;
 }
 
+#arrive, #depart {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
 form button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
-  padding: 15px;
+  font-size: 100%;
+  padding: 5px;
   width: 100%;
 }
 
@@ -164,31 +169,31 @@ footer p {
   .logo {
     margin: 14px 0;
     padding-top: 0;
-    font-size: 72px;
+    font-size: 50px;
   }
 
   header nav {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
-  #menu {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   /* ------- Search form ------- */
   form {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
+
+  form select, form input {
+  width: 100%;
+}
 
   .spaced {
     flex-direction: column;
   }
 
   form button {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
   }
 
   /* ------- About ------- */

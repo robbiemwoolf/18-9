@@ -124,11 +124,6 @@ form input {
   width: 180px;
 }
 
-#arrive, #depart {
-  margin-bottom: 20px;
-  width: 180px;
-}
-
 form button {
   background-color: #ff385c;
   border: none;
@@ -157,9 +152,12 @@ footer p {
   padding: 20px;
 }
 
+
+/* ---------- Desktop Screens ----------*/
+
 @media all and (min-width: 480px) {
 
-  /* -------  Header ------- */
+  /* ------- Dt Header ------- */
   header {
     display: flex;
     justify-content: space-between;
@@ -177,7 +175,7 @@ footer p {
   }
 
 
-  /* ------- Search form ------- */
+  /* ------- Dt Search form ------- */
   form {
     display: flex;
     justify-content: space-between;
@@ -191,12 +189,19 @@ footer p {
     flex-direction: column;
   }
 
-  form button {
-    width: 100%;
-    max-width: 180px;
+
+  form div{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
   }
 
-  /* ------- About ------- */
+  form button{
+    width: 15%;
+  }
+
+
+  /* ------- Dt About ------- */
   main img {
     margin-bottom: 0;
   }
@@ -209,7 +214,7 @@ footer p {
     align-items: center;
   }
 
-  /* ------- Ideas ------- */
+  /* ------- Dt Ideas ------- */
   .grid2x2 {
     flex-wrap: wrap;
   }
@@ -221,7 +226,7 @@ footer p {
     margin: 20px;
   }
 
-  /* ------- Host ------- */
+  /* ------- Dt Host ------- */
   .host-list {
     margin-bottom: 0;
   }
@@ -229,4 +234,18 @@ footer p {
   .host-title {
     padding: 0;
   }
+}
+
+/*--- Very Small Screens (min-width: 216px) ---*/
+
+@media all and (max-width: 300px) {
+  .logo {
+    font-size: 42px;
+  }
+  
+  form select,
+  form input {  
+    width: 60%;
+  }
+
 }
